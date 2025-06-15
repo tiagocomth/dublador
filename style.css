@@ -1,0 +1,752 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #2C3E50;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #ffffff;
+    border-bottom: 1px solid #E8F0FE;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #2C3E50;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.logo-text {
+    color: #3498DB;
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 5px;
+}
+
+.nav-link {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #2C3E50;
+    border-radius: 8px;
+}
+
+.nav-link:hover {
+    background-color: #E8F0FE;
+}
+
+.nav-link.active {
+    background-color: #3498DB;
+    color: #ffffff;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 2px solid transparent;
+}
+
+.btn-primary {
+    background-color: #3498DB;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #2980B9;
+}
+
+.btn-secondary {
+    border: 2px solid #3498DB;
+    color: #3498DB;
+}
+
+.btn-secondary:hover {
+    background-color: #3498DB;
+    color: #ffffff;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E8F0FE;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.hero-title {
+    font-size: 72px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #3498DB;
+}
+
+.hero-description {
+    font-size: 20px;
+    color: #5D6D7E;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.hero-logo {
+    height: 150px;
+    width: auto;
+    margin-bottom: 20px;
+}
+
+/* Page Hero */
+.page-hero {
+    padding: 80px 0;
+    background-color: #E8F0FE;
+    text-align: center;
+    margin-top: 60px;
+}
+
+/* Video Container */
+.video-container {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* Page Hero Icon */
+.page-hero-icon-img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.page-hero-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    background-color: #3498DB;
+    border-radius: 50%;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.page-title {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #3498DB;
+}
+
+.page-description {
+    font-size: 20px;
+    color: #5D6D7E;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #3498DB;
+}
+
+/* Highlights */
+.highlights {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.highlight-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.highlight-card:hover {
+    transform: translateY(-5px);
+}
+
+.highlight-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #3498DB;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.highlight-img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+/* Filtro para imagem branca */
+img[src*="star.png"] {
+    filter: invert(1);
+}
+img[src*="calendar.png"] {
+    filter: invert(1);
+}
+img[src*="group.png"] {
+    filter: invert(1);
+}
+
+.highlight-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.highlight-card p {
+    color: #a0a0a0;
+    line-height: 1.6;
+}
+
+/* Quote Section */
+.quote-section {
+    padding: 80px 0;
+    background-color: #E8F0FE;
+}
+
+.quote {
+    font-size: 24px;
+    font-style: italic;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #3498DB;
+}
+
+.quote-author {
+    text-align: center;
+    margin-top: 20px;
+    color: #5D6D7E;
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 80px 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.cta-description {
+    font-size: 20px;
+    color: #5D6D7E;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Dubladores Grid */
+.dubladores-grid {
+    padding: 80px 0;
+    background-color: #1a1a2e;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.dublador-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dublador-card:hover {
+    transform: translateY(-5px);
+}
+
+.dublador-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.dublador-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #3498DB;
+    border-radius: 50%;
+    margin-right: 15px;
+    color: #ffffff;
+}
+
+.dublador-icon-img {
+    height: 30px;
+    width: auto;
+}
+
+.dublador-info h3 {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #3498DB;
+}
+
+.specialty {
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #E8F0FE;
+    color: #3498DB;
+}
+
+.specialty.anime {
+    background-color: #4c1d95;
+    color: #c4b5fd;
+    border-color: #6b21a8;
+}
+
+.specialty.comedia {
+    background-color: #f59e0b;
+    color: #fcd34d;
+    border-color: #d97706;
+}
+
+.specialty.femininas {
+    background-color: #ec4899;
+    color: #fb7185;
+    border-color: #db2777;
+}
+
+.specialty.jovens {
+    background-color: #22c55e;
+    color: #4ade80;
+    border-color: #16a34a;
+}
+
+.specialty.heroinas {
+    background-color: #3b82f6;
+    color: #60a5fa;
+    border-color: #2563eb;
+}
+
+.specialty.viloes {
+    background-color: #ef4444;
+    color: #f87171;
+    border-color: #dc2626;
+}
+
+.dublador-description {
+    color: #a0a0a0;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.personagens h4 {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #3498DB;
+}
+
+.personagem-tag {
+    display: inline-block;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #3498DB;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin: 2px;
+}
+
+/* Stats Section */
+.stats-section {
+    padding: 80px 0;
+    background-color: #0f3460;
+    text-align: center;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.stat-number {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.stat:nth-child(1) .stat-number {
+    color: #e94560;
+}
+
+.stat:nth-child(2) .stat-number {
+    color: #3b82f6;
+}
+
+.stat:nth-child(3) .stat-number {
+    color: #fbbf24;
+}
+
+.stat p {
+    color: #a0a0a0;
+}
+
+/* História Sections */
+.intro-section {
+    padding: 80px 0;
+    background-color: #1a1a2e;
+}
+
+.intro-text {
+    font-size: 18px;
+    color: #a0a0a0;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.timeline-section {
+    padding: 80px 0;
+    background-color: #0f3460;
+}
+
+.timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.timeline-item {
+    background-color: #16213e;
+    border: 1px solid #0f3460;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.timeline-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.timeline-year {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.timeline-category {
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 20px;
+    font-weight: 500;
+    border: 1px solid;
+}
+
+.timeline-category.cinema {
+    background-color: #4c1d95;
+    color: #c4b5fd;
+    border-color: #6b21a8;
+}
+
+.timeline-category.animacao {
+    background-color: #3b82f6;
+    color: #60a5fa;
+    border-color: #2563eb;
+}
+
+.timeline-category.televisao {
+    background-color: #22c55e;
+    color: #4ade80;
+    border-color: #16a34a;
+}
+
+.timeline-category.anime {
+    background-color: #ef4444;
+    color: #f87171;
+    border-color: #dc2626;
+}
+
+.timeline-category.tecnologia {
+    background-color: #06b6d4;
+    color: #22d3ee;
+    border-color: #0891b2;
+}
+
+.timeline-category.digital {
+    background-color: #f97316;
+    color: #fb923c;
+    border-color: #ea580c;
+}
+
+.timeline-category.reconhecimento {
+    background-color: #fbbf24;
+    color: #fcd34d;
+    border-color: #f59e0b;
+}
+
+.timeline-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #0f3460;
+    color: #e94560;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-right: 15px;
+    float: left;
+}
+
+.timeline-content h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.timeline-content p {
+    color: #a0a0a0;
+    line-height: 1.6;
+}
+
+/* Modern Era */
+.modern-era {
+    padding: 80px 0;
+    background-color: #1a1a2e;
+}
+
+.modern-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.modern-card {
+    background-color: #16213e;
+    border: 1px solid #0f3460;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.modern-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.modern-card:nth-child(1) .modern-icon {
+    color: #ffffff;
+}
+
+.modern-card:nth-child(2) .modern-icon {
+    color: #3b82f6;
+}
+
+.modern-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.modern-card p {
+    color: #a0a0a0;
+    line-height: 1.6;
+}
+
+/* Recognition */
+.recognition-section {
+    padding: 80px 0;
+    background-color: #0f3460;
+    text-align: center;
+}
+
+.recognition-text {
+    font-size: 18px;
+    color: #a0a0a0;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.recognition-quote {
+    background-color: #16213e;
+    border: 1px solid #0f3460;
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.recognition-quote blockquote {
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.recognition-author {
+    font-size: 14px;
+    color: #a0a0a0;
+}
+
+/* Footer */
+.footer {
+    background-color: #E8F0FE;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.footer-icon {
+    color: #e94560;
+    font-size: 25px;
+}
+
+.footer-title {
+    color: #3498DB;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-description {
+    color: #5D6D7E;
+    margin-bottom: 30px;
+}
+
+.footer-credit {
+    color: #5D6D7E;
+    font-size: 14px;
+}
+
+.footer-logo-img {
+    height: 30px;
+    width: auto;
+    margin-right: 10px;
+}
